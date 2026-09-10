@@ -1,0 +1,83 @@
+.hero {
+  min-height: 410px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 60px 20px;
+
+  /* CORRECCIÓN: Degradado profundo y elegante,
+     va de un morado medio a un violeta vivo (menos saturado que el original). */
+  background: linear-gradient(
+    135deg,
+    #c5afd6 0%,   /* Un morado real profundo y rico en la parte superior */
+    #970021 100%  /* Un violeta lavanda vibrante y luminoso en la inferior */
+  );
+
+  box-shadow: inset 0 -5px 15px rgba(0,0,0,0.1); /* Sombra sutil para profundidad */
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero h1 {
+  /* Color de texto blanco para legibilidad sobre el fondo oscuro-medio */
+  color: white;
+  font-size: 48px;
+  margin-bottom: 25px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Sombra para mejorar el contraste */
+}
+
+.hero h1 span {
+  /* El acento principal: Fucsia vibrante para "React" */
+  color: #d946ef;
+}
+
+.hero p {
+  /* Color de texto secundario: Un gris-lila claro, suave pero legible */
+  color: #e0d7e8;
+  font-size: 18px;
+  line-height: 1.6;
+
+  max-width: 620px;
+
+  margin: 0 auto 35px;
+}
+
+.hero-button {
+  display: inline-block;
+
+  /* Botón principal: Fucsia sólido vibrante */
+  background-color: #d946ef;
+  color: white;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  padding: 15px 34px;
+
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(217, 70, 239, 0.4);
+}
+
+.hero-button:hover {
+  /* Hover más oscuro para el botón */
+  background-color: #c026d3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(192, 38, 211, 0.5);
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}

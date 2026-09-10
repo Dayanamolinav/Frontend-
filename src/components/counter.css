@@ -1,0 +1,87 @@
+.counter-section {
+  /* Usamos el mismo degradado morado vibrante del hero */
+  background: linear-gradient(
+    135deg,
+    #c5afd6 0%,   /* Un morado real profundo y rico en la parte superior */
+    #970021 100%  /* Violeta lavanda luminoso en la inferior */
+  );
+  min-height: 390px;
+
+  padding: 70px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  box-shadow: inset 0 5px 15px rgba(0,0,0,0.05); /* Sutil sombra interna para profundidad */
+}
+
+.counter-section h2 {
+  color: white; /* Blanco nítido para destacar sobre el fondo morado */
+  font-size: 30px;
+
+  margin-bottom: 18px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.counter-subtitle {
+  color: #e0d7e8; /* Gris lila suave que combina perfectamente con el fondo */
+
+  margin-bottom: 38px;
+}
+
+.counter-box {
+  width: 280px;
+  height: 120px;
+
+  /* Fondo de la tarjeta del contador: un morado oscuro y elegante que resalta sobre el degradado */
+  background-color: #db5689;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Sombra suave para darle relieve */
+}
+
+.counter-box button {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+
+  /* Color de los botones: Fucsia vibrante de la paleta */
+  background-color: #d946ef;
+  color: white;
+
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(217, 70, 239, 0.4);
+}
+
+.counter-box button:hover {
+  /* Fucsia más oscuro al pasar el cursor */
+  background-color: #751385;
+  transform: scale(1.05); /* Pequeño zoom dinámico */
+}
+
+.counter-number {
+  /* El número en fucsia vibrante para que llame la atención */
+  color: #751385;
+
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.counter-label {
+  color: #e0d7e8; /* Texto secundario en tono claro para mantener la armonía */
+
+  font-size: 13px;
+
+  margin-top: 18px;
+}
