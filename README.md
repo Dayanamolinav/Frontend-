@@ -1,23 +1,60 @@
-# Taller 03 - React
+# Taller 04 — ReactAcademy con rutas
 
-**Dayana Molina Vega**
+Solución del Taller 04 de la Semana 9: **Rutas y Navegación**.
 
-## Antes de ejecutar el proyecto, debes tener instalado:
+## Requisitos implementados
 
-- Node.js
-- npm
+- `BrowserRouter` en `src/main.jsx`.
+- `Routes` y `Route` en `src/App.jsx`.
+- Vistas separadas dentro de `src/views/`.
+- Componentes reutilizables dentro de `src/components/`.
+- Navbar visible en todas las rutas.
+- Navegación interna con `Link` y `NavLink` de React Router, sin `<a href>`.
+- Rutas:
+  - `/` — inicio.
+  - `/cursos` — cursos.
+  - `/nosotros` — nosotros.
+  - `/login` — formulario de interfaz.
+  - `*` — página 404.
+- En `/login`:
+  - El botón permanece deshabilitado mientras falte correo o contraseña.
+  - Después de enviar, correo y contraseña quedan deshabilitados.
+  - No hay backend ni autenticación real.
+- `node_modules` está excluido con `.gitignore`.
 
-Puedes verificar que estén instalados con:
+## Cómo ejecutar el proyecto
+
+Abre una terminal en la carpeta del proyecto y ejecuta:
 
 ```bash
-node -v
-npm -v
-
-Una vez dentro de la carpeta del proyecto, se deben instalar las dependencias con:
 npm install
-
-Después de instalar las dependencias, el proyecto se puede ejecutar con:
 npm run dev
+```
 
-Al ejecutar este comando, Vite iniciará el servidor de desarrollo y mostrará una dirección similar a:
-http://localhost:5173/
+Vite mostrará una URL local, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## Probar la versión de producción
+
+```bash
+npm run build
+npm run preview
+```
+
+## Subir a GitHub
+
+Crea primero un repositorio vacío en GitHub. Luego, desde esta carpeta:
+
+```bash
+git init
+git add -A
+git commit -m "feat: taller 04 con React Router"
+git branch -M main
+git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+git push -u origin main
+```
+
+No subas `node_modules`. El archivo `.gitignore` ya lo excluye.
